@@ -1,10 +1,10 @@
-import React, {useContext} from "react";
+import React from "react";
 
-import clsx from "clsx";
 
 import "./App.scss";
 import {HookSweacher} from "./components/1-useState"
 import {Child} from "./components/2-useContext"
+import {EffectComponent} from "./components/3-useEffect"
 
 
 function App() {
@@ -13,7 +13,8 @@ function App() {
       <header className="App-header">
         <h1>Tutorial</h1>        
           <HookSweacher  />
-          <Child />        
+          <Child />  
+          <EffectComponent />      
       </header>
     </div>
   );

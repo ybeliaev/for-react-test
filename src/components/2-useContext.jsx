@@ -11,9 +11,9 @@ export const Child = () => {
     
     return(
         <MyContext.Provider value="Hello, people!">
-            <div>
+            <div style={{backgroundColor:"tomato", padding: 10, width: '100%',}}>
                 <h2>2-useContext</h2>
-                <ElemChild/>
+                <ElemChild/> 
             </div>
         </MyContext.Provider>
         

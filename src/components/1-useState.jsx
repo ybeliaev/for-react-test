@@ -1,19 +1,19 @@
 import React from "react";
 
-import clsx from "clsx";
 
 export  const HookSweacher = () => {
     const [color, setColor] = React.useState("black");
     const [fontSize, setFontSize] = React.useState(20);
     const [person, setPerson] = React.useState({
       firstName: "joy",
-      lastName: "Niga",
+      lastName: "Nige",
     })
     const styles = {
       div:{
-        padding: 50,
+        padding: 10,
         backgroundColor: color,
         fontSize: `${fontSize}px`,
+        width: '100%'
       }
     } 
     return(
