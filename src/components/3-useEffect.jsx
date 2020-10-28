@@ -9,7 +9,7 @@ export const EffectComponent = () => {
         // вызов при монтировании и любом обновлении
     })
     useEffect(() => {
-        console.log("useEffect() как componentDidMount ")
+        console.log("useEffect() как componentDidMount, [] ")
         // вызов только при монтировании 
     }, [])
 

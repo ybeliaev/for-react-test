@@ -5,6 +5,7 @@ import "./App.scss";
 import {HookSweacher} from "./components/1-useState"
 import {Child} from "./components/2-useContext"
 import {EffectComponent} from "./components/3-useEffect"
+import {Notification} from "./components/4-useEffect"
 
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
         <h1>Tutorial</h1>        
           <HookSweacher  />
           <Child />  
-          <EffectComponent />      
+          <EffectComponent /> 
+          <Notification />     
       </header>
     </div>
   );
