@@ -3,3 +3,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Only for testing code parts.
 
 Use `yarn` in this project.
+
+## В случае неполадок:
+
+> `yarn upgrade`
+> `yarn`
+> `yarn run start`
