@@ -7,6 +7,7 @@ import {Child} from "./components/2-useContext"
 import {EffectComponent} from "./components/3-useEffect"
 import {Notification} from "./components/4-useEffect"
 import {PlanetInfo} from "./components/5-useEffect"
+import {PlanetInfoHook} from "./components/6-create_hook"
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <EffectComponent /> 
           <Notification />     
           <PlanetInfo />
+          <PlanetInfoHook/>
       </header>
     </div>
   );

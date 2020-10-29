@@ -9,7 +9,8 @@ export const PlanetInfo = () => {
         fetch(`http://swapi.dev/api/planets/${id}/`)
         .then(res => res.json())
         .then(data => !cancelled && setName(data.name))
-        return () => cancelled = true
+        return () => cancelled = true // исполнится для пред. эффекта,
+        // его данные загрузятся но не отобразятся
     }, [id])
     
     return(
