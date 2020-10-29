@@ -8,6 +8,7 @@ import {EffectComponent} from "./components/3-useEffect"
 import {Notification} from "./components/4-useEffect"
 import {PlanetInfo} from "./components/5-useEffect"
 import {PlanetInfoHook} from "./components/6-create_hook"
+import {PlanetInfoHookUniversal} from "./components/7-useMemo&Callback"
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Notification />     
           <PlanetInfo />
           <PlanetInfoHook/>
+          <PlanetInfoHookUniversal />
       </header>
     </div>
   );
