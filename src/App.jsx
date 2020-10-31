@@ -9,6 +9,7 @@ import {Notification} from "./components/4-useEffect"
 import {PlanetInfo} from "./components/5-useEffect"
 import {PlanetInfoHook} from "./components/6-create_hook"
 import {PlanetInfoHookUniversal} from "./components/7-useMemo&Callback"
+import { MenuReact } from "./components/MenuReact";
 import {RouterContainer} from "./components/RouterContainer"
 
 
@@ -19,7 +20,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Tutorial</h1>        
+        <h1>Tutorial</h1>  
+          <MenuReact />      
           <HookSweacher  />
           <Child />  
           <EffectComponent /> 
