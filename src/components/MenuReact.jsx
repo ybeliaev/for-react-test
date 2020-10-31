@@ -1,13 +1,11 @@
 import React from "react"
 import { MenuReactItem } from "./MenuReactItem"
 
-const menuElements = ["DOC", "PROJECT", "ABOUT"]
+const menuElements = ["HOME","DOC", "PROJECT", "ABOUT"]
 
 export const MenuReact = () => {
 
-    return(        
-            
+    return( 
             <MenuReactItem items={menuElements}/>
-        
     )
 }
