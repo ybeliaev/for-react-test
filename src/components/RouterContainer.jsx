@@ -22,7 +22,8 @@ export const RouterContainer = () => {
                         render={()=><h2 style={{color: "black"}}>8-Знакомство с роутером.</h2>} /> 
                     {/* роутер смотрит или СОДЕРЖИТСЯ "/" а не точно совпадает, поэтому всегда будет надпись */}
                     <Route path="/coupon" render={()=><h3 style={{color: "black"}}>Роуты накладываются</h3>} />
-                    <Route path="/coupon" component={RouterCoupon} />
+                    <Route path="/coupon" render={()=><RouterCoupon/>} />
+                    {/* такая запись если нужно прикинуть пропс */}
                     <Route path="/table" component={RouterTable} />
                     
                 </div>

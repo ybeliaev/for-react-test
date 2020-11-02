@@ -33,31 +33,31 @@ const A = styled.a`
 
 export const ClickDropdown = () => {
     const [visible, setVisible] = useState(false)
-    const linkEl = useRef(null);
+    const linkRef = useRef(null);
     
 
     const toggleVisible = () => {
         setVisible(!visible)
     }
     const checkOutsideClick = (e) => {
-        console.log(linkEl)
+        if(!e.path.includes(linkRef.current)){
+            setVisible(false)
+        }
     }
     useEffect(() => {
         document.body.addEventListener("click", checkOutsideClick)
-        console.log(linkEl)
+        
     },[])
     return(
         <div style={{position: 'relative',backgroundColor:"Crimson", padding: 10, width: '100%'}}>
             <h2>9 - Clickable Dropdown</h2>            
-            <Dropbtn ref={linkEl} onClick={toggleVisible}>Dropdown</Dropbtn>
-            {visible && (<DropdownContent >
-                            <div className="dropdown-content">
-                                {/* // доп обёртка что-бы прицепиться к классу dropdown-content*/}
+            <Dropbtn ref={linkRef} onClick={toggleVisible}>Dropdown</Dropbtn>
+            {visible && (<DropdownContent> 
                                 <A href={null}>Link 1</A>
                                 <A href={null}>Link 2</A>
-                                <A href={null}>Link 3</A>
-                            </div>                
+                                <A href={null}>Link 3</A>                                           
                         </DropdownContent>)}
         </div>
     )
 }
+// ref={linkRef} можно вешать на контейнер, где выпадающий список - ребёнок. Иначе клик на список закрывает его, но это если нужно такое поведение

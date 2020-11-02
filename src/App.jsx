@@ -12,6 +12,7 @@ import {PlanetInfoHookUniversal} from "./components/7-useMemo&Callback"
 import { MenuReact } from "./components/MenuReact";
 import {RouterContainer} from "./components/RouterContainer"
 import {ClickDropdown} from "./components/9-ClickDropdown"
+import { DataComponent } from "./components/10-data";
 
 
 
@@ -30,7 +31,8 @@ function App() {
           <PlanetInfoHook/>
           <PlanetInfoHookUniversal />
           <RouterContainer />
-          <ClickDropdown />          
+          <ClickDropdown /> 
+          <DataComponent/>         
       </header>
     </div>
   );
